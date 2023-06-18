@@ -11,7 +11,7 @@ int main(void)
 	const char *str2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
 	int i = 0;
 
-	for (int i = 0; str1[i] != '\0'; i++)
+	for (i; str1[i] != '\0'; i++)
 	{
 		putchar(str1[i]);
 	}
