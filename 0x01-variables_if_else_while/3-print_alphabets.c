@@ -16,7 +16,7 @@ int main(void)
 		putchar(str1[i]);
 	}
 	i = 0;
-	for (i; str2[i] != '\0'; i++)
+	for (i = 0; str2[i] != '\0'; i++)
 	{
 		putchar(str2[i]);
 	}
