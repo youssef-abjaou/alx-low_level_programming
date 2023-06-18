@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - assigns a random number to int n everytime
  * it executes, and prints it
@@ -10,7 +11,7 @@ int main(void)
 	const char *str2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
 	int i = 0;
 
-	for (i; str1[i] != '\0'; i++)
+	for (int i = 0; str1[i] != '\0'; i++)
 	{
 		putchar(str1[i]);
 	}
@@ -18,6 +19,5 @@ int main(void)
 	{
 		putchar(str2[i]);
 	}
-
 	return (0);
 }
