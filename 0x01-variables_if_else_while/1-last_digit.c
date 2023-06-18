@@ -18,9 +18,9 @@ int main(void)
 	last = n % 10;
 	if (last > 5)
 		printf("%s %d is %d and is greater than 5\n", string, n, last);
-	if (last == 0)
+	else if (last == 0)
 		printf("%s %d is %d and is 0\n", string, n, last);
-	if (last < 6)
+	else
 		printf("%s %d is %d and is less than 6 and not 0\n", string, n, last);
 	return (0);
 }
