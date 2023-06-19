@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * main - assigns a random number to int n everytime
  * it executes, and prints it
@@ -7,15 +6,12 @@
  */
 int main(void)
 {
-	char letter;
+	int number;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	for (number = 0; number < 10; number++)
 	{
-		if (letter != 'e' && letter != 'q')
-		{
-			putchar(letter);
-		}
+		printf("%d", number);
 	}
-
+	printf("\n");
 	return (0);
 }
