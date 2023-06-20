@@ -15,22 +15,18 @@ int main(void)
 {
 	int n, m;
 
-	for (n = 48; m <= 56; n++)
+	for (n = 0; n <= 8; n++)
 	{
-		for (m = 49; m <= 57;  m++)
+		for (m = n + 1; m <= 9;  m++)
 		{
-			if (m > n)
-			{
-				putchar(n);
-				putchar(m);
-				if (n != 56 || m != 57)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
+			putchar(n + '0');
+			putchar(m + '0');
+			putchar(',');
+			putchar(' ');
 		}
 	}
-	putchar('\n');
+
+	putchar('9');
+	putchar('0');
 	return (0);
 }
