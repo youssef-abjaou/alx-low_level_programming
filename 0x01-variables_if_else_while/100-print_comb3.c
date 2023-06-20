@@ -13,30 +13,24 @@
  */
 int main(void)
 {
-	int i, j, k;
+	int n, m;
 
-	i = 0;
-
-	while (i < 100)
+	for (n = 48; m <= 56; n++)
 	{
-		j = i % 10;
-		k = i / 10;
-
-		if (i < 89)
+		for (m = 49; m <= 57;  m++)
 		{
-			putchar(k + '0');
-			putchar(j + '0');
-
-			if (i < 89)
+			if (m > n)
 			{
-				putchar(44);
-				putchar(32);
+				putchar(n);
+				putchar(m);
+				if (n != 56; || m != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
-
-		i++;
 	}
 	putchar('\n');
-
 	return (0);
 }
