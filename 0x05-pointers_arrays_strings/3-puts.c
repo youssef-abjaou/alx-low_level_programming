@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -7,7 +6,19 @@
  *
  * Return: the length of the string
  */
-int _puts(char *str)
+void _puts(char *str)
 {
+<<<<<<< HEAD
 	puts(str);
+=======
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+	_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
+>>>>>>> 1be5dc90228b884064b1404365eddb231bf75385
 }
+
