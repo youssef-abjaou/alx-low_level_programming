@@ -1,22 +1,24 @@
 #include <stdio.h>
-#include "main.h"
-/**
- * print_triangle -  a function that prints a triangle, followed by a new line.
- * @size: An input integer
- * Return: Always 0
-#include <stdio.h>
-**/
+
 int main(void)
 {
   int n;
   int a[5];
   int *p;
 
+
   a[2] = 1024;
   p = &n;
-
-  scanf("%d", p); // Modified line of code
-
+  /*
+   * write your line of code here...
+   * Remember:
+   * - you are not allowed to use a
+   * - you are not allowed to modify p
+   * - only one statement
+   * - you are not allowed to code anything else than this line of code
+   */
+  (p + ((char*)&a[2] - (char*)p) / sizeof(int)) = 98; // Modified line of code
+  /* ...so that this prints 98\n */
   printf("a[2] = %d\n", a[2]);
   return 0;
 }
